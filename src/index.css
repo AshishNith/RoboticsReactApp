@@ -1,61 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-.custom-underline {
-    position: relative;
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary-color: #8462E8;
+    --background: #000;
+    
+    --text-color: #fff;
+    --transition: all 0.3s ease;
 }
 
-.custom-underline::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #8462E8;
-    transition: width 0.3s ease; /* Adjust the transition as needed */
+
+::-webkit-scrollbar {
+    display: none;
 }
 
-.custom-underline:hover::after {
-    width: 100%; /* Expands the underline on hover */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-.card-container {
-    perspective: 1000px; /* Adds perspective to the 3D effect */
+html {
+    scroll-behavior: smooth; 
 }
 
-.card {
-    width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
-    position: relative;
-    transition: transform 0.6s;
-    transform-style: preserve-3d; /* Enables 3D transformations */
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-.card:hover {
-    transform: rotateY(180deg); /* Rotates the card on hover */
 }
-
-.card-front,
-.card-back {
-    position: absolute;
+html,body{
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hides the back side when facing away */
+    background-color: #000;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.card-back {
-    transform: rotateY(180deg); /* Initially hide the back side */
+.text h1{
+    color: #fff;
 }
-
-.skill-badge {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.page1MainText{
-  line-height: 130px;
-}
-

@@ -1,0 +1,110 @@
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container {
+  display: flex;
+  border-radius: 10px;
+  width: 60vw;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 2rem;
+}
+
+.FormContainer {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: white;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.testimonials h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.testimonials h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials h1 span {
+  color: var(--primary-color);
+}
+
+.contact-info {
+  margin-top: 3rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.info-item i {
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
+.info-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .left, .right {
+    padding: 1rem;
+  }
+}
