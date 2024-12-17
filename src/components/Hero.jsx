@@ -3,7 +3,7 @@ import '../css/Hero.css';
 
 const Hero = () => {
   return (
-      <div className="hero-section">
+      <div id="Home" className="hero-section">
 
       <div className="hero-content">
         
@@ -32,7 +32,7 @@ const Hero = () => {
           Click"
         </div>
         <div className="right-text">
-          ChAT <img src="https://ashishnith.github.io/RobosocNith/Assets/chatBot.png" alt="Chat Bot" />
+          <pre>ChAT  </pre><img src="https://ashishnith.github.io/RobosocNith/Assets/chatBot.png" alt="Chat Bot" />
         </div>
       </div>
     </div>
