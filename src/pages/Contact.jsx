@@ -37,28 +37,34 @@ const Contact = () => {
             
             <div className="contact-info">
                 <div className="info-card">
-                    <i className="fas fa-map-marker-alt"></i>
+                    <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                        <i class="ri-map-pin-line"></i>
                     <h3>Location</h3>
+                    </div>
                     <p>NIT Hamirpur, HP</p>
                 </div>
                 
-                <div className="info-card">
-                    <i className="fas fa-envelope"></i>
-                    <h3>Email</h3>
+                            <div className="info-card">
+                                <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                                    <i class="ri-mail-ai-line"></i>
+                                    <h3>Email</h3>
+                                </div>
                     <p>contact@robosoc.com</p>
                 </div>
                 
-                <div className="info-card">
-                    <i className="fas fa-phone"></i>
-                    <h3>Phone</h3>
+                            <div className="info-card">
+                                <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                                    <i class="ri-phone-line"></i>
+                                    <h3>Phone</h3>
+                                </div>
                     <p>+91 1234567890</p>
                 </div>
 
                 <div className="social-links">
-                    <a href="#"><i className="fab fa-github"></i></a>
-                    <a href="#"><i className="fab fa-linkedin"></i></a>
-                    <a href="#"><i className="fab fa-twitter"></i></a>
-                    <a href="#"><i className="fab fa-instagram"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
                 </div>
             </div>
         </div>
