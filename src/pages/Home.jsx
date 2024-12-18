@@ -5,6 +5,7 @@ import Line from '../components/Line';
 import About from '../components/About';
 import LatestEvent from '../components/LatestEvent';
 import FloatingShape from '../components/FloatingShape';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <About />
         <Line />
         <LatestEvent />
+        <Footer />
       </main>
     </div>
   );

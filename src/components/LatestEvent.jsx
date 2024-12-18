@@ -1,60 +1,69 @@
-import React from 'react'
-import '../css/LatestEvent.css'
-const LatestEvent = () => { 
-  return (
-      <>
-          <div id="Events" class="events-section">
-        <h1>OUR LATEST <span>EVENTS</span></h1>
-        <div class="slider-container">
-            <div class="slider-wrapper">
-                <div class="slide">
-                    <img src="https://ashishnith.github.io/RobosocNith/Assets/Event5.png" alt="Event 1" />
-                    <div class="slide-content">
-                        <h3>Event Title 1</h3>
-                        <p>Brief description of the event goes here</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://ashishnith.github.io/RobosocNith/Assets/Event5.png" alt="Event 2" />
-                    <div class="slide-content">
-                        <h3>Event Title 2</h3>
-                        <p>Brief description of the event goes here</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://ashishnith.github.io/RobosocNith/Assets/Event5.png" alt="Event 3" />
-                    <div class="slide-content">
-                        <h3>Event Title 3</h3>
-                        <p>Brief description of the event goes here</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://ashishnith.github.io/RobosocNith/Assets/Event5.png" alt="Event 4" />
-                    <div class="slide-content">
-                        <h3>Event Title 4</h3>
-                        <p>Brief description of the event goes here</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://ashishnith.github.io/RobosocNith/Assets/Event5.png" alt="Event 5" />
-                    <div class="slide-content">
-                        <h3>Event Title 5</h3>
-                        <p>Brief description of the event goes here</p>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="slider-btn prev-btn"><i class="ri-arrow-left-s-line"></i></button>
-            <button class="slider-btn next-btn"><i class="ri-arrow-right-s-line"></i></button>
-            
-            <div class="slider-dots"></div>
-        </div>
-        <div class="contact">
-            
-        </div>
-    </div>
-      </>
-  )
-}
+import React, { useState, useEffect } from 'react';
+import '../css/LatestEvent.css';
+import eventsData from '../data/events.json';
 
-export default LatestEvent
+const LatestEvent = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const events = eventsData.events;
+
+  // Auto-advance slides
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % events.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [events.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % events.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + events.length) % events.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  return (
+    <div id="Events" className="events-section">
+      <h1>OUR LATEST <span>EVENTS</span></h1>
+      <div className="slider-container">
+        <div className="slider-wrapper">
+          {events.map((event, index) => (
+            <div
+              key={event.id}
+              className={`slide ${index === currentSlide ? 'active' : ''}`}
+            >
+              <img src={event.image} alt={event.title} />
+              <div className="slide-content">
+                <h3>{event.title}</h3>
+                <p>{event.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <button className="slider-btn prev-btn" onClick={prevSlide}>
+          <i className="ri-arrow-left-s-line"></i>
+        </button>
+        <button className="slider-btn next-btn" onClick={nextSlide}>
+          <i className="ri-arrow-right-s-line"></i>
+        </button>
+        
+        <div className="slider-dots">
+          {events.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+            ></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LatestEvent;

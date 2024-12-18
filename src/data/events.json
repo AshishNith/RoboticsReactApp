@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Event Title 1",
+      "description": "Brief description of the event goes here",
+      "image": "https://ashishnith.github.io/RobosocNith/Assets/Event1.png",
+      "images": [
+        "https://ashishnith.github.io/RobosocNith/Assets/Event1.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event2.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event3.png"
+      ],
+      "date": "March 15, 2024",
+      "location": "Main Hall, NITH",
+      "fullDescription": "Detailed description of Event 1. This can include all the important information about the event, its highlights, and what participants can expect."
+    },
+    {
+      "id": 2,
+      "title": "Event Title 2",
+      "description": "Brief description of the event goes here",
+      "image": "https://ashishnith.github.io/RobosocNith/Assets/Event2.png",
+      "images": [
+        "https://ashishnith.github.io/RobosocNith/Assets/Event2.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event3.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event4.png"
+      ],
+      "date": "April 1, 2024",
+      "location": "Auditorium, NITH",
+      "fullDescription": "Detailed description of Event 2. This can include all the important information about the event, its highlights, and what participants can expect."
+    },
+    {
+      "id": 3,
+      "title": "Event Title 3",
+      "description": "Brief description of the event goes here",
+      "image": "https://ashishnith.github.io/RobosocNith/Assets/Event3.png",
+      "images": [
+        "https://ashishnith.github.io/RobosocNith/Assets/Event3.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event4.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event5.png"
+      ],
+      "date": "April 15, 2024",
+      "location": "Workshop Area, NITH",
+      "fullDescription": "Detailed description of Event 3. This can include all the important information about the event, its highlights, and what participants can expect."
+    },
+    {
+      "id": 4,
+      "title": "Event Title 4",
+      "description": "Brief description of the event goes here",
+      "image": "https://ashishnith.github.io/RobosocNith/Assets/Event4.png",
+      "images": [
+        "https://ashishnith.github.io/RobosocNith/Assets/Event4.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event5.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event1.png"
+      ],
+      "date": "May 1, 2024",
+      "location": "Lab Complex, NITH",
+      "fullDescription": "Detailed description of Event 4. This can include all the important information about the event, its highlights, and what participants can expect."
+    },
+    {
+      "id": 5,
+      "title": "Event Title 5",
+      "description": "Brief description of the event goes here",
+      "image": "https://ashishnith.github.io/RobosocNith/Assets/Event5.png",
+      "images": [
+        "https://ashishnith.github.io/RobosocNith/Assets/Event5.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event1.png",
+        "https://ashishnith.github.io/RobosocNith/Assets/Event2.png"
+      ],
+      "date": "May 15, 2024",
+      "location": "Central Ground, NITH",
+      "fullDescription": "Detailed description of Event 5. This can include all the important information about the event, its highlights, and what participants can expect."
+    }
+  ]
+}

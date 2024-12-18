@@ -27,6 +27,7 @@
     margin: 0 auto;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0 0 50px 0 rgba(138, 43, 226, 0.2);
 }
 
 .slider-wrapper {
