@@ -22,8 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <div className="backcover"></div>
+    <div className="navContainer">
       {/* Navigation bar */}
       <nav>
         <div className="left">
@@ -55,14 +54,14 @@ const Navbar = () => {
               <Link to="/" onClick={scrollToTop}>Home</Link>
               <a href="#AboutUs" onClick={(e) => { e.preventDefault(); scrollToSection('AboutUs'); }}>About Us</a>
               <a href="#Events" onClick={(e) => { e.preventDefault(); scrollToSection('Events'); }}>Events</a>
-              <Link to="/contact" onClick={closePopup}>Contact Us</Link>
+              {/* <Link to="/contact" onClick={closePopup}>Contact Us</Link> */}
               <Link to="/projects" onClick={closePopup}>Projects</Link>
               <Link to="/members" onClick={closePopup}>Members</Link>
             </div>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
