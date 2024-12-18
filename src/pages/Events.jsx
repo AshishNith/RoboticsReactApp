@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import eventsData from '../data/events.json';
 import '../css/Events.css';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 function Events() {
   const [showPopup, setShowPopup] = useState(false);
@@ -34,6 +36,7 @@ function Events() {
   };
 
   return (
+    <>
     <div className="events-page">
       <Navbar />
       <div className="events-header">
@@ -103,6 +106,8 @@ function Events() {
         </div>
       )}
     </div>
+    <Footer />
+    </> 
   );
 }
 

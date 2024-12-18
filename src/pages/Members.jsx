@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import MemberCard from '../components/MemberCard';
 import '../App.css';
 import FloatingShape from '../components/FloatingShape';
+import Footer from '../components/Footer';
 
 const MembersData = [
         {
@@ -158,7 +159,8 @@ function Members() {
       <Navbar />
       <div className="MembersContainer">
         <MemberCard members={MembersData} />
-      </div>
+            </div>
+            <Footer />  
       </>
     );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../css/Contact.css'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -128,6 +129,7 @@ const Contact = () => {
                 </div>
             </div>  
             </div>
+            <Footer />  
             </>
   )
 }
