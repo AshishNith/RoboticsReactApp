@@ -1,0 +1,85 @@
+.hero-section {
+    color: #fff;
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    /* margin-top: -8vh; */
+}
+
+
+
+/* Hero Content */
+
+.hero-section .hero-content {
+    padding-top: 15vh;
+    padding-left: 10vw;
+}
+
+.hero-section .hero-content .title {
+    font-size: 9vw;
+    line-height: 16vh;
+    display: inline;
+}
+
+.hero-section .hero-content .logo-o {
+    width: 6vw;
+    height: 6vw;
+    background-color: #8462e8;
+    border-radius: 6vw;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    position: relative;
+}
+
+.hero-section .hero-content .logo-o img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+}
+
+.hero-section .hero-content hr {
+    position: absolute;
+    top: 63.2%;
+    left: 30%;
+    width: 6.2vw;
+    height: 2px;
+    rotate: 90deg;
+}
+
+/* Tagline */
+.hero-section .hero-content .tagline {
+    font-size: 1.5vw;
+    font-weight: 100;
+    position: absolute;
+    top: 62.2%;
+    left: 34.5%;
+}
+
+/* Bottom Text */
+.hero-section .bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 3vw;
+    height: calc(100vh - 561.2px);
+}
+
+.hero-section .bottom-text .right-text {
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.hero-section .bottom-text .right-text img {
+    width: 40px;
+}
+
+.hero-section .bottom-text .left-text {
+    font-family: 'Irish Grover', cursive;
+    font-size: 1vw;
+}
+

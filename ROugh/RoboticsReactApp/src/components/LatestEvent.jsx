@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/LatestEvent.css'
-const LatestEvent = () => { 
+const LatestEvent = () => {
   return (
       <>
           <div id="Events" class="events-section">

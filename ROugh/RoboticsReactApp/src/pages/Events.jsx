@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import FloatingShape from '../components/FloatingShape';
-function Projects() {
+
+function Events() {
   return (
     <div className="text-center mt-10">
-      <FloatingShape />
       <Navbar />
       <div className="text">
-        <h1>Projects</h1>
+        <h1>Event Page</h1>
       </div>
     </div>
   );
 }
 
-export default Projects;
+export default Events;
+    

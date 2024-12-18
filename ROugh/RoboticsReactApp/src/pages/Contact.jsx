@@ -82,8 +82,7 @@ const Contact = () => {
                         placeholder="Enter Your Name" 
                         required
                     />
-                            </div>
-                            
+                </div>
 
                 <div className="form-group">
                     <label htmlFor="email">Email Address</label>

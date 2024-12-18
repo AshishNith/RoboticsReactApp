@@ -1,4 +1,4 @@
-/* .MembersContainer {
+.MembersContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,4 +17,4 @@
 main {
     width: 100%;
     position: relative;
-} */
+}
