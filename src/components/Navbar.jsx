@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="right">
           <Link to="/" onClick={scrollToTop}>Home</Link>
           <a href="#AboutUs" onClick={(e) => { e.preventDefault(); scrollToSection('AboutUs'); }}>About Us</a>
-          <a href="#Events" onClick={(e) => { e.preventDefault(); scrollToSection('Events'); }}>Events</a>
+          <Link to="/event">Events</Link>
           <Link to="/contact">Contact</Link>
           <i onClick={openPopup} className="hamburger ri-menu-3-line"></i>
         </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <div className="bottom">
               <Link to="/" onClick={scrollToTop}>Home</Link>
               <a href="#AboutUs" onClick={(e) => { e.preventDefault(); scrollToSection('AboutUs'); }}>About Us</a>
-              <a href="#Events" onClick={(e) => { e.preventDefault(); scrollToSection('Events'); }}>Events</a>
+              <a href="/event" onClick={(e) => { e.preventDefault(); scrollToSection('Events'); }}>Events</a>
               {/* <Link to="/contact" onClick={closePopup}>Contact Us</Link> */}
               <Link to="/projects" onClick={closePopup}>Projects</Link>
               <Link to="/members" onClick={closePopup}>Members</Link>
