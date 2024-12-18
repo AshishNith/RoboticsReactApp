@@ -38,6 +38,8 @@ function Events() {
       <Navbar />
       <div className="events-header">
         <h1>Our <span>Events</span></h1>
+        <hr className="events-title-hr" />
+
         {/* <p>Explore all our exciting events and activities</p> */}
       </div>
       
