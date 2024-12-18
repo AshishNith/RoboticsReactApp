@@ -76,6 +76,9 @@
                 opacity: 0.5;
             }
         }
+        .form-label{
+            color: rgb(187, 24, 24);
+        }
         .mainContainer{
             color: white;
           display: flex;

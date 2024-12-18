@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="contact-right">
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name">Full Name</label>
+                    <label className="form-label" htmlFor="name"><h1>Full Name</h1> </label>
                     <input 
                         value={formData.name} 
                         onChange={handleChange} 
@@ -86,7 +86,7 @@ const Contact = () => {
                             
 
                 <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
+                    <label className="form-label" htmlFor="email"><h1>Email Address</h1></label>
                     <input 
                         value={formData.email} 
                         onChange={handleChange}
@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="subject">Subject</label>
+                    <label className="form-label" htmlFor="subject"><h1>Subject</h1></label>
                     <input 
                         value={formData.subject} 
                         onChange={handleChange}
@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="message">Message</label>
+                    <label className="form-label" htmlFor="message"><h1>Message</h1></label>
                     <textarea 
                         value={formData.message} 
                         onChange={handleChange}
