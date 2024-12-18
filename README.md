@@ -5,7 +5,7 @@ Here’s a professional `README.md` template for your website:
 # Robotics Society NITH Website
 
 ## 📖 Overview
-The official website for the **Robotics Society NITH**, showcasing our vision, mission, projects, events, and members. This website serves as a central hub for our society, providing updates, resources, and interactive features.
+The official website for the **Robotics Society NITH**, show casing our vision, mission, projects, events, and members. This website serves as a central hub for our society, providing updates, resources, and interactive features.
 
 ## ✨ Features
 - **Hero Section**: Eye-catching landing page with animations.
