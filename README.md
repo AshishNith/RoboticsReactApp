@@ -66,7 +66,7 @@ The official website for the **Robotics Society NITH**, show casing our vision, 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/AshishNith/RoboticsReactApp.git
-   cd robotics-society-website
+   cd RoboticsReactApp
    ```
 
 2. **Install Dependencies**:
