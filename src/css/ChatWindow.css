@@ -1,0 +1,129 @@
+.chat-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid #8462e8; /* pink-500 */
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1500;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #8462e8;
+    cursor: move;
+  }
+  
+  .chat-title {
+    color: #8462e8;
+    font-family: 'SquidFont', sans-serif; /* or your fallback */
+  }
+  
+  .close-button {
+    color: #8462e8;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  .close-button>i{
+    font-size: 2rem;
+  }
+  
+  .close-button:hover {
+    color: #a58bf5;
+  }
+  
+  .messages-container {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+  }
+  
+  .message.user {
+    text-align: right;
+  }
+  
+  .message.bot {
+    text-align: left;
+  }
+  
+  .message-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .message-row.user {
+    flex-direction: row-reverse;
+  }
+  
+  .message-row.bot {
+    flex-direction: row;
+  }
+  
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #8462e8;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  
+  .message-bubble {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    background-color: #806db852;
+    color: white;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+  
+  .input-container {
+    padding: 1rem;
+    border-top: 1px solid #8462e8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .textarea {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #8462e8;
+    border-radius: 0.5rem;
+    color: white;
+    resize:none;
+    font-family: inherit;
+  }
+  
+  .send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #8462e8;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  
+  .send-icon{
+    font-size: 1.4rem;
+  }

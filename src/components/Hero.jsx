@@ -1,7 +1,17 @@
 import React from 'react';
 import '../css/Hero.css';
+import { RiChatSmile2Line } from 'react-icons/ri';
+import ChatWindow  from "../components/ChatWindow.jsx";
+import { useState } from 'react';
+
 
 const Hero = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen);
+  };
+
   return (
       <div id="Home" className="hero-section">
 
@@ -10,6 +20,7 @@ const Hero = () => {
         <h1 className="title">
           R
           <div className="logo-o">
+          {/* <RiChatSmile2Line className="text-white text-2xl" /> */}
             <img src="https://ashishnith.github.io/RobosocNith/Assets/chatBot.png" alt="Robot Logo" />
           </div>
           botics<br />
@@ -31,10 +42,11 @@ const Hero = () => {
           Robots<br />
           Click"
         </div>
-        <div className="right-text">
-          <pre>ChAT  </pre><img src="https://ashishnith.github.io/RobosocNith/Assets/chatBot.png" alt="Chat Bot" />
+        <div className="right-text chat-bg fixed cursor-pointer" onClick={toggleChat}>
+          <RiChatSmile2Line className="text-white text-2xl" />
         </div>
       </div>
+      <ChatWindow isOpen={isChatOpen} onClose={toggleChat} />
     </div>
   );
 };
