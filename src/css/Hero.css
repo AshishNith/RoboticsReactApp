@@ -83,3 +83,19 @@
     font-size: 1vw;
 }
 
+.chat-bg{
+    background-color: #8462e8;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    z-index: 1000;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
